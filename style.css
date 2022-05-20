@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: bisque;
+}
+
+.container {
+  padding: 10px;
+  columns: 3;
+  column-gap: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    columns: 4;
+  }
+}
+
+.box {
+  width: 100%;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  break-inside: avoid;
+}
+
+.box img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.box h2 {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
